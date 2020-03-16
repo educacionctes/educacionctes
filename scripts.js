@@ -1,4 +1,4 @@
-(function($){
+jQuery(function($){
     $('.toggle').click(function(e) {
         e.preventDefault();
 
@@ -14,4 +14,4 @@
             $this.next().slideToggle(350);
         }
     });
-})(jQuery);
+});
