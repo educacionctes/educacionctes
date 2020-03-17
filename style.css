@@ -120,3 +120,9 @@ a.button {
         padding: 20px;
     }
 }
+
+@media only screen and (min-width: 700px){
+    iframe{
+        min-height: 300px;
+    }
+}
