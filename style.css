@@ -44,9 +44,7 @@ ul .inner {
     overflow: hidden;
     display: none;
 }
-ul .inner.show {
-    /*display: block;*/
-}
+
 ul li {
     margin: 0.5em 0;
 }
