@@ -104,6 +104,10 @@ a.button {
     margin: 0;
 }
 
+.item-bachiller {
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 410px) {
     h1{
         text-align: center;
