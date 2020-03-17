@@ -103,3 +103,20 @@ a.button {
 .row {
     margin: 0;
 }
+
+@media only screen and (max-width: 410px) {
+    h1{
+        text-align: center;
+    }
+    img.mec-logo{
+        text-align: center;
+        margin: 0 auto;
+        align-self: center;
+    }
+    .page-container{
+        width: 95%;
+        left: 2%;
+        right: 2%;
+        padding: 20px;
+    }
+}
