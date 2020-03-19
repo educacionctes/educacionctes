@@ -106,6 +106,10 @@ a.button {
     margin-top: 10px;
 }
 
+.contact-item {
+    display: inline;
+}
+
 @media only screen and (max-width: 410px) {
     h1{
         text-align: center;
