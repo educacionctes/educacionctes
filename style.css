@@ -110,6 +110,11 @@ a.button {
     display: inline;
 }
 
+.elemento-descarga{
+    text-decoration: none !important;
+    color: darkgreen;
+}
+
 @media only screen and (max-width: 410px) {
     h1{
         text-align: center;
