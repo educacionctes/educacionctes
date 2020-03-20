@@ -115,6 +115,12 @@ a.button {
     color: darkgreen;
 }
 
+img.ge-logo{
+    margin-top:15px; 
+    margin-bottom:10px; 
+    height: 100px;
+}
+
 @media only screen and (max-width: 410px) {
     h1{
         text-align: center;
