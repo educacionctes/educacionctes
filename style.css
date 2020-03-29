@@ -44,9 +44,7 @@ ul .inner {
     overflow: hidden;
     display: none;
 }
-ul .inner.show {
-    /*display: block;*/
-}
+
 ul li {
     margin: 0.5em 0;
 }
@@ -108,6 +106,21 @@ a.button {
     margin-top: 10px;
 }
 
+.contact-item {
+    display: inline;
+}
+
+.elemento-descarga{
+    text-decoration: none !important;
+    color: darkgreen;
+}
+
+img.ge-logo{
+    margin-top:15px; 
+    margin-bottom:10px; 
+    height: 100px;
+}
+
 @media only screen and (max-width: 410px) {
     h1{
         text-align: center;
@@ -123,6 +136,7 @@ a.button {
         right: 2%;
         padding: 20px;
     }
+
 }
 
 @media only screen and (min-width: 700px){
@@ -130,3 +144,16 @@ a.button {
         min-height: 300px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .header-mec{
+        display: none !important;
+    }
+
+    .header-mec-small{
+        display: block !important;
+    }
+}
+
+
