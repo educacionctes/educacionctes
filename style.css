@@ -20,7 +20,7 @@ p {
 body {
     width: 100%;
     margin:0;
-    margin-bottom: 300px;
+    margin-bottom: 500px;
     color: #161615;
     background: #F7F7F7;
 }
@@ -95,7 +95,7 @@ a.button {
 }
 .header{
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     background: url("assets/curves.svg");
     background-position: bottom;
     background-size: cover;
@@ -118,18 +118,16 @@ a.button {
     color: darkgreen;
 }
 
-img.ge-logo{
-    margin-top:15px; 
-    margin-bottom:10px; 
-    height: 100px;
-}
-
 .footer {
     background: #073C38;
     color: #ffffff;
     position: absolute;
     bottom: 0;
-    height: 300px;
+    min-height: 300px;
+}
+
+.footer .ge-logo {
+    border-right: 1px solid;
 }
 
 .footer p{
@@ -145,11 +143,21 @@ img.ge-logo{
         margin: 0 auto;
         align-self: center;
     }
+    .footer .ge-logo{
+        border: none;
+        max-width: 250px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
     .page-container{
         width: 95%;
         left: 2%;
         right: 2%;
         padding: 20px;
+    }
+
+    .footer {
+        margin-top: 100px;
     }
 
 }
