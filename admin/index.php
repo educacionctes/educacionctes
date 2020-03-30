@@ -1827,9 +1827,9 @@ $all_files_size = 0;
                 <th><?php echo lng('Name') ?></th>
                 <th><?php echo lng('Size') ?></th>
                 <th><?php echo lng('Modified') ?></th>
-                <?php if (!FM_IS_WIN && !$hide_Cols): ?>
-                    <th><?php echo lng('Perms') ?></th>
-                    <th><?php echo lng('Owner') ?></th><?php endif; ?>
+                <?php /*if (!FM_IS_WIN && !$hide_Cols): */?><!--
+                    <th><?php /*echo lng('Perms') */?></th>
+                    <th><?php /*echo lng('Owner') */?></th>--><?php /*endif; */?>
                 <th><?php echo lng('Actions') ?></th>
             </tr>
             </thead>
@@ -1843,10 +1843,10 @@ $all_files_size = 0;
                     <td class="border-0"></td>
                     <td class="border-0"></td>
                     <td class="border-0"></td>
-                    <?php if (!FM_IS_WIN && !$hide_Cols) { ?>
+                    <?php /*if (!FM_IS_WIN && !$hide_Cols) { */?><!--
                         <td class="border-0"></td>
                         <td class="border-0"></td>
-                    <?php } ?>
+                    --><?php /*} */?>
                 </tr>
                 <?php
             }
@@ -1878,11 +1878,11 @@ $all_files_size = 0;
                     </td>
                     <td><?php if ($calc_folder) { echo fm_get_directorysize($path . '/' . $f); } else { echo lng('Folder'); } ?></td>
                     <td><?php echo $modif ?></td>
-                    <?php if (!FM_IS_WIN && !$hide_Cols): ?>
-                        <td><?php if (!FM_READONLY): ?><a title="Change Permissions" href="?p=<?php echo urlencode(FM_PATH) ?>&amp;chmod=<?php echo urlencode($f) ?>"><?php echo $perms ?></a><?php else: ?><?php echo $perms ?><?php endif; ?>
+                    <?php /*if (!FM_IS_WIN && !$hide_Cols): */?><!--
+                        <td><?php /*if (!FM_READONLY): */?><a title="Change Permissions" href="?p=<?php /*echo urlencode(FM_PATH) */?>&amp;chmod=<?php /*echo urlencode($f) */?>"><?php /*echo $perms */?></a><?php /*else: */?><?php /*echo $perms */?><?php /*endif; */?>
                         </td>
-                        <td><?php echo $owner['name'] . ':' . $group['name'] ?></td>
-                    <?php endif; ?>
+                        <td><?php /*echo $owner['name'] . ':' . $group['name'] */?></td>
+                    --><?php /*endif; */?>
                     <td class="inline-actions"><?php if (!FM_READONLY): ?>
                             <a title="<?php echo lng('Delete')?>" href="?p=<?php echo urlencode(FM_PATH) ?>&amp;del=<?php echo urlencode($f) ?>" onclick="return confirm('<?php echo lng('Delete').' '.lng('Folder').'?'; ?>\n \n ( <?php echo urlencode($f) ?> )');"> <i class="fa fa-trash-o" aria-hidden="true"></i></a>
                             <a title="<?php echo lng('Rename')?>" href="#" onclick="rename('<?php echo fm_enc(FM_PATH) ?>', '<?php echo fm_enc(addslashes($f)) ?>');return false;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
