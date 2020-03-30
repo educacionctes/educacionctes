@@ -71,7 +71,6 @@ require '../views/header.php';
         {
             $rtn .= "		<div class=\"file fs-1-2 bold\">" . basename($file) . "</div>";
             $rtn .= "		<div class=\"data upper size fs-0-7\"><span class=\"bold\">" . count_dir_files($file) . "</span> archivos</div>";
-            $rtn .= "		<div class=\"data upper size fs-0-7\"><span class=\"bold\">Tamaño:</span> " . get_directory_size($file) . "</div>";
 
         }
         else
